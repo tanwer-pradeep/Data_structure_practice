@@ -1,19 +1,15 @@
-// first file, contains an overview of a generic tree and its properties.
-// generally used to store generic type of data / hereditary data.
-// all trees are graph.
-
 package Generic_tree;
 import java.util.Scanner;
 import java.util.Stack;
 import java.util.ArrayList;
 
+// first file, contains an overview of a generic tree and its properties.
+// generally used to store generic type of data / hereditary data.
+// all trees are graph.
+
 public class concepts{
 
-    private static class Node{
-        int data;
-        ArrayList<Node> Children = new ArrayList<Node>();
-    }
-
+    static Node root;
     public static Node constructor(int[] a){
         Node root = null;
         Stack<Node> st = new Stack<Node>();
@@ -63,9 +59,10 @@ public class concepts{
             arr[i] = scn.nextInt();
         }
         
-        Node root = constructor(arr);
+        root = constructor(arr);
 
         display(root);
+        System.out.println(Size_function.size(root));
 
         scn.close();
     }
