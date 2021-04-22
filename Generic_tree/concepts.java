@@ -1,7 +1,6 @@
 package Generic_tree;
 import java.util.Scanner;
 import java.util.Stack;
-import java.util.ArrayList;
 
 // first file, contains an overview of a generic tree and its properties.
 // generally used to store generic type of data / hereditary data.
