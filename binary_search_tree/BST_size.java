@@ -1,4 +1,5 @@
 package binary_search_tree;
+// import java.util.ArrayList;
 import java.util.Stack;
 
 public class BST_size {
@@ -86,8 +87,6 @@ public class BST_size {
         System.out.println(BST_sum.sum(root));
         Pre_in_post.print(root);
         System.out.println(Search.search(root, data));
-
-
     }
 }
 
