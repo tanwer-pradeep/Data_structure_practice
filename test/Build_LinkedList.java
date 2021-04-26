@@ -1,6 +1,5 @@
+
 package test;
-
-
 import java.util.Scanner;
 
 class Node{
@@ -80,6 +79,7 @@ class LinkedList{
             newnode = newnode.next;
         }
         newnode.next = null;
+        tail = newnode;
         size--;
     }
 
@@ -102,6 +102,7 @@ class LinkedList{
             System.out.print(newnode.data + " -> ");
             newnode = newnode.next;
         }
+        System.out.print(newnode.data + " -> ");
         System.out.println(".");
     }
 
