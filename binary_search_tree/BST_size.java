@@ -89,4 +89,3 @@ public class BST_size {
         System.out.println(Search.search(root, data));
     }
 }
-
