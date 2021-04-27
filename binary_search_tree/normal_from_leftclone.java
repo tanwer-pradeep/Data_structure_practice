@@ -3,7 +3,7 @@ package binary_search_tree;
 import java.io.*;
 import java.util.*;
 
-public class left_clone {
+public class normal_from_leftclone {
   public static class Node {
     int data;
     Node left;
@@ -81,18 +81,19 @@ public class left_clone {
     display(node.right);
   }
 
-  public static Node createLeftCloneTree(Node node){
-      if(node == null) return null;
-        Node lres = createLeftCloneTree(node.left);
-        createLeftCloneTree(node.right);
+    public static Node transBackFromLeftClonedTree(Node node){
+        if(node == null) return null;
+        Node lres = transBackFromLeftClonedTree(node.left);
+        transBackFromLeftClonedTree(node.right);
 
-        Node clone = new Node(node.data, null, null);
-        clone.left = lres;
-        node.left = clone;
+        // Node clone = new Node(node.data, null, null);
+        Node clone = node.left;
+        clone.left = null;
+        node.left = lres;
 
         return node;
     }
-
+  
   public static void main(String[] args) throws Exception {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     int n = Integer.parseInt(br.readLine());
@@ -107,7 +108,7 @@ public class left_clone {
     }
 
     Node root = construct(arr);
-    root = createLeftCloneTree(root);
+    root = transBackFromLeftClonedTree(root);
     display(root);
   }
 
