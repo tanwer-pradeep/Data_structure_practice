@@ -3,6 +3,8 @@
         "test",
         "Stacks_and_Queues",
         "Hashmap",
-        "Generic_tree"
+        "Generic_tree",
+        "Heap"
+
     ]
 }
