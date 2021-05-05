@@ -24,7 +24,7 @@ public class K_largest_element{
       }
       
       for(int i = k; i < arr.length; i++){
-          int newelement = arr[i];
+        //   int newelement = arr[i];
           if(arr[i] > pq.peek()){
               pq.remove();
               pq.add(arr[i]);
