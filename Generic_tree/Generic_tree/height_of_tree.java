@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class generic_tree_constructor{
+public class height_of_tree{
     
     public static class Node{
         int data;
@@ -17,6 +17,19 @@ public class generic_tree_constructor{
         for(Node child : node.children) size += Size(child);
         size++;
         return size;
+    }
+
+    public static int height(Node node){
+        if(node.children.size() == 0) return 0;
+
+        int ht = -1;
+        for(Node child : node.children){
+            int temp = height(child);
+            if(temp > ht) ht = temp;
+
+        }
+
+        return ht + 1;
     }
 
     public static Node constructor(int[] arr){
@@ -37,32 +50,6 @@ public class generic_tree_constructor{
             }
         }
         return root;
-    }
-
-    
-
-    public static int maximum(Node node){
-        if(node == null) return Integer.MIN_VALUE;
-        
-        int max = node.data;
-
-        for(Node child : node.children){
-            int val = maximum(child);
-            if(max < val) max = val;
-        }
-        return max;
-    }
-
-    public static int minimum(Node node){
-        if(node == null) return Integer.MAX_VALUE;
-        
-        int min = node.data;
-
-        for(Node child : node.children){
-            int val = minimum(child);
-            if(min > val) min = val;
-        }
-        return min;
     }
 
     public static void Display(Node node){
@@ -92,7 +79,5 @@ public class generic_tree_constructor{
         Display(root);
 
         System.out.println("Size of Tree : " + Size(root));
-        System.out.println("maximum of Tree : " + maximum(root));
-        System.out.println("minimum of Tree : " + minimum(root));
     }
 }
