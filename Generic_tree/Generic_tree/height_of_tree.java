@@ -20,7 +20,6 @@ public class height_of_tree{
     }
 
     public static int height(Node node){
-        if(node.children.size() == 0) return 0;
 
         int ht = -1;
         for(Node child : node.children){
@@ -79,5 +78,6 @@ public class height_of_tree{
         Display(root);
 
         System.out.println("Size of Tree : " + Size(root));
+        System.out.println("Height of Tree : " + height(root));
     }
 }
