@@ -27,7 +27,7 @@ public class Multijumps {
                 if(maxjmp == 0){
                     ans[i] = 0;
                 }else{
-                    for(int j = 1; j <= maxjmp && i + j < n; j++){
+                    for(int j = 1; j <= maxjmp && i + j <= n; j++){
 
                         ans[i] += ans[i + j];
                     }
