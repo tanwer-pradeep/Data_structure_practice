@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MaxGold",
+            "request": "launch",
+            "mainClass": "dp.src.MaxGold",
+            "projectName": "DP_5610073e"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
