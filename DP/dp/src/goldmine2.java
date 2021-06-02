@@ -1,7 +1,7 @@
-import java.io.*;
+package dp.src;
 import java.util.*;
 
-public class Main {
+public class goldmine2 {
 
  public static int maxgold(int[][] mine){
         int nr = mine.length, nc = mine[0].length;

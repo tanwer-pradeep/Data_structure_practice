@@ -1,3 +1,4 @@
+package dp.src;
 import java.util.Scanner;
 
 public class Goldmine
