@@ -24,12 +24,12 @@ public class Main {
         }
 
         
-        // for(int i = 0; i < nr; i++){
-        //     for(int j = 0; j < nc; j++){
-        //         System.out.print(dp[i][j] + " ");
-        //     }
-        //     System.out.println();
-        // }
+        for(int i = 0; i < nr; i++){
+            for(int j = 0; j < nc; j++){
+                System.out.print(dp[i][j] + " ");
+            }
+            System.out.println();
+        }
         int ans = 0;
         for(int r = 0; r < nr; r++){
             ans = Math.max(ans, dp[r][0]);
