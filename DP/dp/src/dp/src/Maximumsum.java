@@ -34,7 +34,8 @@ public class Maximumsum {
         // System.out.println(Math.max(inc, exc));
 
         // logic 2
-        maximumsum(arr, 0, 0, new int[n]);
+        
+        maximumsum(arr, 0, 0, new HashMap<String,Integer>());
 
         scn.close();
     }

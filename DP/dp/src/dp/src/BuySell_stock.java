@@ -1,3 +1,4 @@
+package dp.src;
 import java.util.Scanner;
 
 // ref : - https://www.pepcoding.com/resources/online-java-foundation/dynamic-programming-and-greedy/buy-and-sell-stocks-ita-official/ojquestion
@@ -17,10 +18,10 @@ public class BuySell_stock{
                 sp = arr[day];
             }
             else{
-
+                profit += 0;
             }
         }
-
+        System.out.println(profit);
 
         scn.close();
     }
