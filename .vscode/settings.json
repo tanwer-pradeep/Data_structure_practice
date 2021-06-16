@@ -2,9 +2,9 @@
     "java.project.sourcePaths": [
         "test",
         "Stacks_and_Queues",
+        "Heap",
         "Hashmap",
         "Generic_tree",
-        "Heap"
-
+        "codechef/June_Long_2021"
     ]
 }
